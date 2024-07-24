@@ -28,11 +28,11 @@ function App() {
   const [input2, setInput2] = useState("");
   const [message, setMessage] = useState("");
 
-  function firstNameHandle(e) {
+  function input1Handle(e) {
     setInput1(e.target.value);
   }
 
-  function secondNameHandle(e) {
+  function input2Handle(e) {
     setInput2(e.target.value);
   }
 
@@ -57,13 +57,13 @@ function App() {
         type="text"
         placeholder="Enter first name"
         data-testid="input1"
-        onChange={firstNameHandle}
+        onChange={input1Handle}
       ></input>
       <input
         type="text"
         placeholder="Enter second name"
         data-testid="input2"
-        onChange={secondNameHandle}
+        onChange={input2Handle}
       ></input>
       <button data-testid="calculate_relationship" onClick={handleRelationship}>
         Calculate Relationship Future
