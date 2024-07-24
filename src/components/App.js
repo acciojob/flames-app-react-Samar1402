@@ -66,7 +66,7 @@ function App() {
         onChange={input2Handle}
       ></input>
       <button data-testid="calculate_relationship" onClick={handleRelationship}>
-        Calculate Relationship Future
+        Calculate relationship future
       </button>
       <button data-testid="clear" onClick={handleClear}>
         Clear
